@@ -3,14 +3,16 @@ import java.util.Scanner;
 public class Entprueba {
     public static void main(String[] args) {
         System.out.println("Buenos dias");
-        System.out.println("Ingrese una temperatura");
+        System.out.println("Ingrese 5 temperaturas");
         Scanner sctemp=new Scanner(System.in);
+        for (int cont=0; cont<5;++cont){
         int temperatura=sctemp.nextInt();
         if (temperatura>=0){
               System.out.println("Temperatura positiva");
         }else{
               System.out.println("Temperatura negativa");
         }
-    }
+     }
+  }
     
 }
