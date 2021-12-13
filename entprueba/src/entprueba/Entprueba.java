@@ -27,7 +27,7 @@ public class Entprueba {
             }
 
         }
-        System.out.println("Temperatura mayor " + mayor + " Temperatura menor" + menor);
+        System.out.println("La temperatura mayor es " + mayor + " y la temperatura menor es " + menor);
     }
 
 }
