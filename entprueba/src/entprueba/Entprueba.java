@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Entprueba {
 
     public static void main(String[] args) {
-        float menor = 5000;
-        float mayor = -5000;
+        //Te he cambiado el double de mayor y menor por algo mucho mejor
+        double mayor = Double.MIN_VALUE;
+        double menor = Double.MAX_VALUE;
         System.out.println("Buenos dias");
         System.out.println("Ingrese el número de municipios");
         Scanner sctemp = new Scanner(System.in);
