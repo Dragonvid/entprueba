@@ -6,6 +6,8 @@ public class Entprueba {
 
     public static void main(String[] args) {
         //Te he cambiado el double de mayor y menor por algo mucho mejor
+        //Double.MIN_VALUE introduce en la variable el valor mas pequeño posible para los Double.
+        //Double.MAX_VALUE introduce en la variable el valor mas grande posible para los Double.
         double mayor = Double.MIN_VALUE;
         double menor = Double.MAX_VALUE;
         System.out.println("Buenos dias");
