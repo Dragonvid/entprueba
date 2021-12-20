@@ -10,6 +10,8 @@ public class Entprueba {
         //Double.MAX_VALUE introduce en la variable el valor mas grande posible para los Double.
         double[] temperaturas;
         String[] municipios ;
+        String municipioMayor = null ;
+        String municipioMenor = null ;
         double mayor = Double.MIN_VALUE;
         double menor = Double.MAX_VALUE;
         Scanner sctemp = new Scanner(System.in);
@@ -31,13 +33,15 @@ public class Entprueba {
             }
             if (temperaturas[cont] < menor) {
                 menor = temperaturas[cont];
+                municipioMenor = municipios[cont];
             }
             if (temperaturas[cont] > mayor) {
                 mayor = temperaturas[cont];
+                municipioMayor = municipios[cont];
             }
 
         }
-        System.out.println("La temperatura mayor es " + mayor + " y la temperatura menor es " + menor);
+        System.out.println("La temperatura mayor es " + mayor + " "+municipioMayor +" y la temperatura menor es " + menor+" "+municipioMenor);
         System.out.println("Las temperaturas y municipios introducidas son:");
         for (int cont2 = 0; cont2 < numMunicipios; ++cont2) {
         System.out.print(temperaturas[cont2]);
